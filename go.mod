@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/gofiber/fiber/v2 v2.40.1
 	google.golang.org/grpc v1.51.0
+	google.golang.org/protobuf v1.27.1
 )
 
 require (
@@ -22,5 +23,4 @@ require (
 	golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab // indirect
 	golang.org/x/text v0.4.0 // indirect
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
-	google.golang.org/protobuf v1.27.1 // indirect
 )

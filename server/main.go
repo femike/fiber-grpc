@@ -9,13 +9,16 @@ import (
 	"google.golang.org/grpc/reflection"
 )
 
-type server struct{}
+type server struct {
+	proto.AddServiceServer
+}
 
 func main() {
 	lis, err := net.Listen("tcp", ":4040")
 	if err != nil {
 		panic(err)
 	}
+
 	srv := grpc.NewServer()
 	proto.RegisterAddServiceServer(srv, &server{})
 	reflection.Register(srv)
